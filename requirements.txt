@@ -1,0 +1,35 @@
+# ─── Telegram bot ────────────────────────────────────────────────────────────
+python-telegram-bot==21.3
+httpx==0.27.0
+
+# ─── Database ────────────────────────────────────────────────────────────────
+SQLAlchemy==2.0.30
+aiosqlite==0.20.0           # SQLite async driver (default)
+asyncpg==0.29.0             # PostgreSQL async driver (optional, swap in DATABASE_URL)
+psycopg2-binary==2.9.9      # PostgreSQL sync driver (used in RQ worker / Flask)
+
+# ─── Environment & config ────────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ─── Encryption ──────────────────────────────────────────────────────────────
+cryptography==42.0.7
+
+# ─── Redis & background jobs ─────────────────────────────────────────────────
+redis==5.0.4
+rq==1.16.2
+
+# ─── Google OAuth & Gmail API ─────────────────────────────────────────────────
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+google-api-python-client==2.128.0
+
+# ─── Flask (OAuth callback server) ───────────────────────────────────────────
+Flask==3.0.3
+gunicorn==22.0.0            # Production WSGI server for the Flask app
+
+# ─── HTTP client (tasks, notifications) ──────────────────────────────────────
+requests==2.32.2
+
+# ─── Rate limiting / caching ─────────────────────────────────────────────────
+cachetools==5.3.3

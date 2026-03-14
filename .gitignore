@@ -1,0 +1,43 @@
+# Environment
+.env
+*.env
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+logs/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Redis dump
+dump.rdb
+
+# Google credentials (if you ever download client_secrets.json)
+client_secrets.json
+credentials.json
+token.json
